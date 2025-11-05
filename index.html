@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mustafa Ahmed | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="logo">Mustafa Ahmed</h1>
+      <nav id="navbar">
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="menu-toggle" id="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HOME -->
+  <section id="home" class="home">
+    <div class="content">
+      <div class="text">
+        <h2>Hello, I'm <span>Mustafa Ahmed</span></h2>
+        <h3>Flutter Developer | Software Engineering Student</h3>
+        <p>
+          I’m passionate about creating smooth, interactive, and visually appealing mobile apps using Flutter.
+          I enjoy transforming creative ideas into functional, beautiful digital products.
+        </p>
+        <a href="#contact" class="btn">Let’s Connect</a>
+      </div>
+      <div class="image">
+        <div class="profile-placeholder">
+          <img src="img/profilePic.jpeg" alt="Profile Picture" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+      As a software engineering student, I focus on learning technologies that help me build useful and beautiful mobile apps.
+      I’m exploring UI/UX design, problem-solving, and clean Flutter architecture to become a professional app developer.
+    </p>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="skills">
+    <h2>My Skills</h2>
+    <div class="skills-grid">
+      <div class="skill">Flutter</div>
+      <div class="skill">Dart</div>
+      <div class="skill">C++</div>
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">UI Design</div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section id="portfolio" class="portfolio">
+    <h2>My Work</h2>
+    <div class="portfolio-grid">
+      <div class="project"><img src="img/project1.jpeg" alt="Project 1" /></div>
+      <div class="project"><img src="img/project2.jpeg" alt="Project 2" /></div>
+      <div class="project"><img src="img/project3.jpeg" alt="Project 3" /></div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Mustafa Ahmed | All Rights Reserved</p>
+  </footer>
+
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      menuToggle.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>
